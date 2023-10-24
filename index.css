@@ -101,6 +101,16 @@ header{
     font-weight: 500;
 }
 
+.header-btn .sign-in{
+    background: #474fa0;
+    color: #fff;
+    border-radius: .5rem;
+
+}
+
+.header-btn .sign-in:hover{
+    background-color: var(--main-color);
+}
 
 
 /* Header style end  */
