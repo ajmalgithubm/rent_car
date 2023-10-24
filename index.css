@@ -1,0 +1,106 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root{
+    --main-color:#fe5b3d;
+    --second-color:#ffac38;
+    --text-color:#444;
+    --gradient: linear-gradient( var(--main-color),var(--second-color));
+}
+
+/* Custom scroll bar */
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+section{
+    padding: 50px 100px;
+}
+
+
+/* Header style start here */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeff1;
+    padding: 15px 100px;
+}
+
+.logo img{
+    width: 5rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    position: relative;
+    list-style: none;
+}
+
+.navbar li a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.navbar li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar li a:hover::after{
+    width: 100%;
+}
+
+#menu{
+    font-size: 24px;
+    cursor: pointer;
+    z-index:101 ;
+    display: none;
+}
+
+.header-btn a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+
+
+/* Header style end  */
