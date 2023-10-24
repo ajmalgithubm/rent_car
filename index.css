@@ -1,6 +1,7 @@
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,36 +11,36 @@
     text-decoration: none;
 }
 
-:root{
-    --main-color:#fe5b3d;
-    --second-color:#ffac38;
-    --text-color:#444;
-    --gradient: linear-gradient( var(--main-color),var(--second-color));
+:root {
+    --main-color: #fe5b3d;
+    --second-color: #ffac38;
+    --text-color: #444;
+    --gradient: linear-gradient(var(--main-color), var(--second-color));
 }
 
 /* Custom scroll bar */
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     width: 0.5rem;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 5rem;
 }
 
-section{
+section {
     padding: 50px 100px;
 }
 
 
 /* Header style start here */
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -52,28 +53,28 @@ header{
     padding: 15px 100px;
 }
 
-.logo img{
+.logo img {
     width: 5rem;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
 }
 
-.navbar li{
+.navbar li {
     position: relative;
     list-style: none;
 }
 
-.navbar li a{
+.navbar li a {
     font-size: 1rem;
     padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
 }
 
-.navbar li a::after{
+.navbar li a::after {
     content: "";
     width: 0;
     height: 3px;
@@ -84,33 +85,128 @@ header{
     transition: 0.5s;
 }
 
-.navbar li a:hover::after{
+.navbar li a:hover::after {
     width: 100%;
 }
 
-#menu{
+#menu {
     font-size: 24px;
     cursor: pointer;
-    z-index:101 ;
+    z-index: 101;
     display: none;
 }
 
-.header-btn a{
+.header-btn a {
     padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
 }
 
-.header-btn .sign-in{
+.header-btn .sign-in {
     background: #474fa0;
     color: #fff;
     border-radius: .5rem;
 
 }
 
-.header-btn .sign-in:hover{
+.header-btn .sign-in:hover {
     background-color: var(--main-color);
 }
 
 
 /* Header style end  */
+
+
+/* Home Start */
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url('/image/rent4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 50px center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.home .text {
+    margin-top: 150px;
+}
+
+.home .text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.home .text p {
+    margin: 0.5rem;
+}
+
+.app-stores {
+    display: flex;
+}
+
+.app-stores img:nth-child(n) {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/*  form style  */
+
+
+
+.form-container form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 100px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.input-box{
+    flex: 1 1 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #eeeff1;
+    font-size:1rem;
+}
+
+.form-container form .btn{
+    flex: 1 1 7px;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: #474fa0;
+    color: #fff;
+    font-weight: 500;
+}
+
+.form-container form .btn:hover{
+    background: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+/* Home End */
